@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(220, 212, 202);
+}
+
+#loginContainer {
+    display: flex;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+#loginboxContainer {
+    width: 300px;
+    height: 650px;
+    background-color: rgb(98, 236, 236);
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+} 
+
+.forminputbox{
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+.forminputbox:hover{
+    background-color: rgb(230, 69, 69);
+}
+
+.forminputtitle {
+    font-family:Arial;
+    font-size: small;
+    color: black;
+    font-weight:bold;
+}
+
+.radioContainer {
+    width: fit-content;
+    margin-right: auto;
+    font-family:Arial;
+    font-size: small;
+    color: black;
+    font-weight:bold;
+}
+
+.checkBoxContainer {
+    width: fit-content;
+    margin: 0px auto;
+    font-family:Arial;
+    font-size: small;
+    color: black;
+    font-weight:bold;
+}
+
+.checkBoxOption {
+    margin-bottom: 6px;
+}
+
+#registerButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#registerButton{
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    font-family:Arial;
+    font-size: small;
+    color: black;
+    font-weight:bold;
+}
+#registerButton:hover{
+  background-color: rgb(230, 69, 69);
+}
