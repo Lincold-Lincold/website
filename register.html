@@ -8,24 +8,25 @@
     <title>Task Later</title>
 </head>
 <body>
+    <h2 style="display: flex; justify-content: center; font-family:Arial;">Registration Form</h2>
     <div id="loginContainer">
         <div id="loginboxContainer">
-            <form id=formRegistration"> 
+            <form id="formRegistration" action="login.php" method="post"> 
                     <!--First Name-->
-                    <label for="fName" id="fName" class="forminputtitle">Enter First Name</label><br>
-                    <input type="text" name="fName" class="forminputbox"><br><br>
+                    <label for="fName" class="forminputtitle">Enter First Name</label><br>
+                    <input type="text" id="fName" name="fName" class="forminputbox"><br><br>
                     <!--Last Name-->
-                    <label for="LName" id="LName" class="forminputtitle">Enter Last Name</label><br>
-                    <input type="text" name="LName" class="forminputbox"><br><br>
+                    <label for="lName" class="forminputtitle">Enter Last Name</label><br>
+                    <input type="text" id="lName" name="lName" class="forminputbox"><br><br>
                     <!--Email -->
-                    <label for="email" id="email" class="forminputtitle">Enter Email</label><br>
-                    <input type="email" name="email" class="forminputbox"><br><br>
+                    <label for="email" class="forminputtitle">Enter Email</label><br>
+                    <input type="email" id="email" name="email" class="forminputbox"><br><br>
                     <!--Password -->
-                    <label for="pass" id="pass" class="forminputtitle">Enter Password</label><br>
-                    <input type="password" name="pass" class="forminputbox"><br><br>
+                    <label for="pass" class="forminputtitle">Enter Password</label><br>
+                    <input type="password" id="pass" name="pass" class="forminputbox"><br><br>
                     <!--Confirm Password -->
-                    <label for="confirmPass" id="confirmPass" class="forminputtitle">Confirm Password</label><br>
-                    <input type="password" name="confirmPass" class="forminputbox"><br><br>  
+                    <label for="confirmPass" class="forminputtitle">Confirm Password</label><br>
+                    <input type="password"  id="confirmPass" name="confirmPass" class="forminputbox"><br><br>  
 
                     <!--Radio Container-->
                     <div class="radioContainer">   
@@ -33,17 +34,17 @@
 
                             <div class="radioOption">
                                 <input type="radio" id="school" name="radioButtonGroup" value="School">
-                                <label for="school" id="schoolLabel">School</label>
+                                <label for="school">School</label>
                             </div>
 
                             <div class="radioOption">
                                 <input type="radio" id="personal" name="radioButtonGroup" value="Personal">
-                                <label for="personal" id="personalLabel">Personal</label>
+                                <label for="personal">Personal</label>
                             </div>
 
                             <div class="radioOption">
                                 <input type="radio" id="both" name="radioButtonGroup" value="Both">
-                                <label for="both" id="bothLabel">Both</label>             
+                                <label for="both">Both</label>             
                             </div>      
                     </div>
                     
@@ -51,20 +52,20 @@
                         <p>What is your favorite color</p>
 
                            <div class="checkBoxOption">
-                                <input type="checkbox" id="checkboxBlue" name="checkBoxOption" value="Blue">
-                                <label id="checkboxBlueLabel" for="checkboxBlue">Blue</label>
+                                <input type="checkbox" id="checkboxBlue" name="checkBoxOption[]" value="Blue">
+                                <label for="checkboxBlue">Blue</label>
                            </div>
                            <div class="checkBoxOption">
-                                <input type="checkbox" id="checkboxGreen" name="checkBoxOption" value="Green">
-                                <label id="checkboxGreenLabel" for="checkboxGreen">Green</label>
+                                <input type="checkbox" id="checkboxGreen" name="checkBoxOption[]" value="Green">
+                                <label for="checkboxGreen">Green</label>
                            </div>
                            <div class="checkBoxOption">
-                                <input type="checkbox" id="checkboxOrange" name="checkBoxOption" value="Orange">
-                                <label id="checkboxOrangeLabel" for="checkboxOrange">Orange</label>
+                                <input type="checkbox" id="checkboxOrange" name="checkBoxOption[]" value="Orange">
+                                <label for="checkboxOrange">Orange</label>
                            </div>
                            <div class="checkBoxOption">
-                                <input type="checkbox" id="checkboxPurple" name="checkBoxOption" value="Purple">
-                                <label id="checkboxPurpleLabel" for="checkboxPurple">Purple</label>
+                                <input type="checkbox" id="checkboxPurple" name="checkBoxOption[]" value="Purple">
+                                <label for="checkboxPurple">Purple</label>
                            </div>
                     </div>                
 
