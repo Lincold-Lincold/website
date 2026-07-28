@@ -11,7 +11,7 @@
     <h2 style="display: flex; justify-content: center; font-family:Arial;">Registration Form</h2>
     <div id="loginContainer">
         <div id="loginboxContainer">
-            <form id="formRegistration" action="login.php" method="post"> 
+            <form id="formRegistration" action="process_register.php" method="post"> 
                     <!--First Name-->
                     <label for="fName" class="forminputtitle">Enter First Name</label><br>
                     <input type="text" id="fName" name="fName" class="forminputbox"><br><br>
