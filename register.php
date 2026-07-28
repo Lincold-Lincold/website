@@ -14,36 +14,36 @@
             <form id="formRegistration" action="process_register.php" method="post"> 
                     <!--First Name-->
                     <label for="fName" class="forminputtitle">Enter First Name</label><br>
-                    <input type="text" id="fName" name="fName" class="forminputbox"><br><br>
+                    <input type="text" id="fName" name="fName" class="forminputbox" required><br><br>
                     <!--Last Name-->
                     <label for="lName" class="forminputtitle">Enter Last Name</label><br>
-                    <input type="text" id="lName" name="lName" class="forminputbox"><br><br>
+                    <input type="text" id="lName" name="lName" class="forminputbox" required><br><br>
                     <!--Email -->
                     <label for="email" class="forminputtitle">Enter Email</label><br>
-                    <input type="email" id="email" name="email" class="forminputbox"><br><br>
+                    <input type="email" id="email" name="email" class="forminputbox" required><br><br>
                     <!--Password -->
                     <label for="pass" class="forminputtitle">Enter Password</label><br>
-                    <input type="password" id="pass" name="pass" class="forminputbox"><br><br>
+                    <input type="password" id="pass" name="pass" class="forminputbox" required><br><br>
                     <!--Confirm Password -->
                     <label for="confirmPass" class="forminputtitle">Confirm Password</label><br>
-                    <input type="password"  id="confirmPass" name="confirmPass" class="forminputbox"><br><br>  
+                    <input type="password"  id="confirmPass" name="confirmPass" class="forminputbox" required><br><br>  
 
                     <!--Radio Container-->
                     <div class="radioContainer">   
                         <p class="radioLabel">Main Purpose</p>
 
                             <div class="radioOption">
-                                <input type="radio" id="school" name="radioButtonGroup" value="School">
+                                <input type="radio" id="school" name="radioButtonGroup" value="School" required>
                                 <label for="school">School</label>
                             </div>
 
                             <div class="radioOption">
-                                <input type="radio" id="personal" name="radioButtonGroup" value="Personal">
+                                <input type="radio" id="personal" name="radioButtonGroup" value="Personal" required>
                                 <label for="personal">Personal</label>
                             </div>
 
                             <div class="radioOption">
-                                <input type="radio" id="both" name="radioButtonGroup" value="Both">
+                                <input type="radio" id="both" name="radioButtonGroup" value="Both" required>
                                 <label for="both">Both</label>             
                             </div>      
                     </div>
