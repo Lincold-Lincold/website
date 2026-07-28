@@ -1,5 +1,6 @@
 
 <?php
+        require_once 'config.php';
 
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
             exit('Invalid request method.');
@@ -15,7 +16,7 @@
 
 
 /*
-|--------------------------------------------------------------------------
+|-------------------------------------------------------------------------- 
 | Basic validation
 |--------------------------------------------------------------------------
 */ 
@@ -35,6 +36,37 @@
         if(!is_array($selectedColors)){
             $selectedColors = [];
         }
+        $favoriteColors = implode(', ', $selectedColors);
+        /*
+        |-------------------------------------------------------------------------- 
+        | SQL
+        |--------------------------------------------------------------------------
+        */ 
+
+        $sql = "INSERT INTO users
+        (first_name, last_name, email, password, purpose, favorite_colors)
+        VALUES
+        (:firstName, :lastName, :email, :password, :purpose, :favoriteColors)";
+
+        $statement = $pdo->prepare($sql);
+
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        $statement->execute([
+        ':firstName' => $firstName,
+        ':lastName' => $lastName,
+        ':email' => $email,
+        ':password' => $hashedPassword,
+        ':purpose' => $purpose,
+        ':favoriteColors' => $favoriteColors
+        ]);
+
+        echo 'Registration successful.';
+         /*
+        |-------------------------------------------------------------------------- 
+        | SQL
+        |--------------------------------------------------------------------------
+        */ 
 
         function protectionagainstmalitioustext(String $value):String 
         {
@@ -66,8 +98,6 @@
             <p>Last Name  : <?= protectionagainstmalitioustext($lastName)?> </p>
 
             <p>Email      : <?= protectionagainstmalitioustext($email)?> </p>
-
-            <p>Password   : <?= protectionagainstmalitioustext($password)?> </p>
  
             <p>Purpose    : <?= protectionagainstmalitioustext($purpose)?> </p>
 
@@ -81,3 +111,5 @@
             
         </body>
         </html>
+
+        
