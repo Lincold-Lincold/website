@@ -28,7 +28,7 @@
             exit('The email you provided was invalid please try again.');
         }
         
-        if(!$password === $confirmPassword){
+        if($password !== $confirmPassword){
             exit('The password do not match please try again.');
         }
 
